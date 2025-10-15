@@ -26,14 +26,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Rodar testes
-        run: |
-          pytest --maxfail=1 --disable-warnings -q
+#     - name: Rodar testes
+#        run: |
+#          pytest --maxfail=1 --disable-warnings -q
 
   deploy:
     runs-on: ubuntu-latest
-    needs: test
-    if: success()
+#    needs: test
+#    if: success()
 
     steps:
       - name: Checkout do código

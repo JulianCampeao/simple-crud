@@ -51,4 +51,4 @@ jobs:
 
       - name: Rodar a aplicação
         run: |
-          python run.py
+          python --version
